@@ -3,296 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EventYay Support | Premium Client Care</title>
-    <meta name="google-site-verification" content="8WagPUKoj8qz5mkPqExYWoZCdkdtuH2qPAe7J5Adduc" />
-    <meta name="description" content="Selamat datang di Pusat Dukungan Eksklusif EventYay. Dapatkan bantuan VIP, panduan manajemen acara, dan layanan concierge untuk kesuksesan event Anda.">
-    <meta name="keywords" content="eventyay support, eventyay help center, VIP event management, panduan eventyay, layanan pelanggan event, premium support">
-    <meta name="author" content="EventYay Client Care">
-    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="UVDdUqYpyp8KVnNvSLscCzA5nk541u_liLdw0DUNjt0" />
+    <title>Barkhu Mail | Premium Enterprise Solutions</title>
+    <meta name="description" content="Barkhu Mail menyediakan infrastruktur komunikasi bisnis yang aman, eksklusif, dan andal. Tingkatkan konektivitas bisnis Anda dengan layanan premium dari mail.barkhu.us.">
+    <link rel="canonical" href="https://mail.barkhu.us/" />
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231a1a1a%22/><path d=%22M20 30l30 20 30-20v40H20V30z%22 fill=%22%23d4af37%22/></svg>">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Outfit:wght@200;500;800&display=swap" rel="stylesheet">
     
-    <link rel="canonical" href="https://support.eventyay.com/" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
     <style>
         :root {
-            --bg-dark: #0a0a0b;
-            --bg-card: #121214;
-            --accent-gold: #d4af37;
-            --gold-hover: #f1c40f;
-            --text-main: #fcfcfc;
-            --text-muted: #a0a0a0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f9f295 50%, #b5935b 100%);
         }
 
         body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            line-height: 1.6;
-            overflow-x: hidden;
+            background-color: #0c0c0c;
+            color: #e5e5e5;
+            font-family: 'Inter', sans-serif;
         }
 
-        /* NAVIGATION BAR */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(10, 10, 11, 0.9);
+        .heading-font {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .glass-nav {
+            background: rgba(12, 12, 12, 0.85);
             backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
-            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
-        /* FONT-ONLY LOGO */
-        .logo {
-            text-decoration: none;
-            display: flex;
-            align-items: baseline;
-            gap: 8px;
+        .logo-font {
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: -0.05em;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .logo-main {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem;
+        .hero-mesh {
+            background-image: radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                              radial-gradient(at 50% 0%, hsla(45,40%,15%,1) 0, transparent 50%);
+        }
+
+        .luxury-card {
+            background: linear-gradient(145deg, #151515, #0a0a0a);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .luxury-card:hover {
+            border-color: rgba(212, 175, 55, 0.5);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            transform: scale(1.02);
+        }
+
+        .gold-btn {
+            background: var(--gold-gradient);
+            color: #000;
             font-weight: 700;
-            color: var(--text-main);
-            letter-spacing: 1px;
+            transition: 0.3s;
         }
 
-        .logo-sub {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 400;
-            color: var(--accent-gold);
-            letter-spacing: 3px;
-            text-transform: uppercase;
+        .gold-btn:hover {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
         }
 
-        .nav-links {
-            display: flex;
-            gap: 35px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--text-main);
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 500;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-gold);
-        }
-
-        /* HERO / SEARCH SECTION */
-        .hero {
-            padding: 180px 8% 100px;
-            text-align: center;
-            background: radial-gradient(circle at top center, #1a1a1d 0%, var(--bg-dark) 80%);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .hero h1 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 600;
-            color: var(--accent-gold);
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            max-width: 600px;
-            margin: 0 auto 40px;
-            font-weight: 300;
-        }
-
-        /* PREMIUM SEARCH BAR */
-        .search-container {
-            max-width: 600px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: 18px 25px;
-            background: var(--bg-card);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 30px;
-            color: var(--text-main);
-            font-size: 1rem;
-            font-family: 'Montserrat', sans-serif;
-            outline: none;
-            transition: all 0.3s ease;
-        }
-
-        .search-input:focus {
-            border-color: var(--accent-gold);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
-        }
-
-        .search-btn {
-            position: absolute;
-            right: 8px;
-            top: 8px;
-            bottom: 8px;
-            padding: 0 25px;
-            background: var(--accent-gold);
-            color: var(--bg-dark);
-            border: none;
-            border-radius: 25px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .search-btn:hover {
-            background: var(--gold-hover);
-        }
-
-        /* SUPPORT CATEGORIES */
-        .categories {
-            padding: 80px 8%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: var(--bg-card);
-            padding: 40px 30px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.4s ease;
-            text-align: center;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-gold);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        }
-
-        .card h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            color: var(--text-main);
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            font-weight: 300;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #050505;
-            padding: 80px 8% 40px;
-            text-align: center;
-            border-top: 1px solid rgba(212, 175, 55, 0.2);
-        }
-
-        .footer-image {
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-            margin-bottom: 25px;
-            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
-        }
-
-        .footer-logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            color: var(--text-main);
-            margin-bottom: 10px;
-        }
-
-        .copyright {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            letter-spacing: 1px;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .hero { padding: 140px 5% 80px; }
-            .logo { flex-direction: column; gap: 0; align-items: flex-start; }
-            .logo-sub { font-size: 0.7rem; }
+        .glow-text {
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
         }
     </style>
 </head>
-<body>
+<body class="hero-mesh">
 
-    <nav>
-        <a href="https://support.eventyay.com" class="logo">
-            <span class="logo-main">EventYay</span>
-            <span class="logo-sub">Support</span>
-        </a>
-        <ul class="nav-links">
-            <li><a href="#">Guides</a></li>
-            <li><a href="#">Billing</a></li>
-            <li><a href="#">Submit a Ticket</a></li>
-            <li><a href="#">Sign In</a></li>
-        </ul>
-    </nav>
+    <header class="glass-nav fixed top-0 w-full z-50 py-5 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="logo-font text-2xl font-extrabold">
+                BARKHU<span class="text-white opacity-80 font-light">MAIL</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-10 text-[11px] uppercase tracking-[0.2em] font-medium text-gray-400">
+                <a href="#" class="hover:text-white transition">Network</a>
+                <a href="#" class="hover:text-white transition">Security</a>
+                <a href="#" class="hover:text-white transition">Enterprise</a>
+            </nav>
 
-    <section class="hero">
-        <h1>How can we elevate your event?</h1>
-        <p>Premium assistance and exclusive resources for EventYay organizers and VIP clients.</p>
+            <a href="#" class="hidden md:block text-[11px] font-bold border border-white/20 px-6 py-2 hover:bg-white hover:text-black transition uppercase tracking-widest">
+                Login
+            </a>
+        </div>
+    </header>
+
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+        <div class="inline-block px-4 py-1 border border-yellow-900/50 rounded-full text-[10px] uppercase tracking-[0.4em] text-yellow-500 mb-6 glow-text">
+            Secure Communication Hub
+        </div>
+        <h1 class="heading-font text-5xl md:text-8xl font-extrabold text-white leading-tight mb-8">
+            Precision. Security. <br> <span class="opacity-40 italic">Excellence.</span>
+        </h1>
+        <p class="max-w-2xl text-gray-400 font-light leading-relaxed text-base md:text-lg mb-12">
+            Infrastruktur digital kelas atas yang dirancang untuk kebutuhan korespondensi bisnis global. Aman, cepat, dan sepenuhnya terenkripsi.
+        </p>
         
-        <div class="search-container">
-            <input type="text" class="search-input" placeholder="Search for articles, guides, or troubleshooting...">
-            <button class="search-btn">Search</button>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+            <button class="gold-btn px-10 py-4 rounded-sm text-xs uppercase tracking-widest">Get Access Now</button>
+            <button class="border border-white/10 px-10 py-4 rounded-sm text-xs uppercase tracking-widest hover:bg-white/5">Corporate Plan</button>
         </div>
     </section>
 
-    <section class="categories">
-        <div class="card">
-            <h3>Event Setup</h3>
-            <p>Panduan komprehensif untuk memulai dan mengonfigurasi acara eksklusif Anda.</p>
-        </div>
-        <div class="card">
-            <h3>Ticketing & Sales</h3>
-            <p>Manajemen tiket VIP, penagihan, dan analitik penjualan real-time.</p>
-        </div>
-        <div class="card">
-            <h3>Concierge Services</h3>
-            <p>Hubungi tim dukungan khusus kami untuk bantuan tingkat lanjut.</p>
+    <section class="py-32 px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="luxury-card p-12 rounded-lg">
+                <div class="w-12 h-[1px] bg-yellow-600 mb-8"></div>
+                <h3 class="heading-font text-xl font-bold text-white mb-4 tracking-wide">Elite Hosting</h3>
+                <p class="text-sm text-gray-500 font-light leading-loose">Penyimpanan data aman dengan protokol enkripsi militer untuk aset digital Anda.</p>
+            </div>
+
+            <div class="luxury-card p-12 rounded-lg">
+                <div class="w-12 h-[1px] bg-yellow-600 mb-8"></div>
+                <h3 class="heading-font text-xl font-bold text-white mb-4 tracking-wide">Business Mail</h3>
+                <p class="text-sm text-gray-500 font-light leading-loose">Sistem pengiriman pesan berkecepatan tinggi dengan uptime 99.9% tanpa gangguan.</p>
+            </div>
+
+            <div class="luxury-card p-12 rounded-lg">
+                <div class="w-12 h-[1px] bg-yellow-600 mb-8"></div>
+                <h3 class="heading-font text-xl font-bold text-white mb-4 tracking-wide">Global Connect</h3>
+                <p class="text-sm text-gray-500 font-light leading-loose">Terhubung dengan mitra bisnis di seluruh dunia melalui jaringan server premium kami.</p>
+            </div>
+
         </div>
     </section>
-              <div style="display: none;">
-     <a href="https://www.shortlyai.com/privacy/">https://www.shortlyai.com/privacy/</a>
-     <a href="https://www1.yellowjacket.com/">Bosmujur</a>
-</div>
-    <footer>
-        <img src="eventyay-support-crest.png" alt="EventYay Premium Support" class="footer-image">
-        
-        <div class="footer-logo">EventYay Support</div>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">Excellence in Event Management</p>
-        
-        <div class="copyright">
-            &copy; 2026 EventYay Support. All Rights Reserved. | <a href="https://support.eventyay.com" style="color: var(--accent-gold); text-decoration: none;">support.eventyay.com</a>
+
+    <footer class="py-16 border-t border-white/5 text-center">
+        <div class="logo-font text-xl font-bold mb-6">BARKHU</div>
+        <div class="flex justify-center space-x-8 mb-8 text-[10px] uppercase tracking-widest text-gray-600 font-bold">
+            <a href="#" class="hover:text-yellow-600">Privacy</a>
+            <a href="#" class="hover:text-yellow-600">Terms</a>
+            <a href="#" class="hover:text-yellow-600">Legal</a>
         </div>
+        <p class="text-[9px] uppercase tracking-[0.3em] text-gray-700">
+            &copy; 2026 mail.barkhu.us | Powered by Premium Infrastructure
+        </p>
     </footer>
 
 </body>
